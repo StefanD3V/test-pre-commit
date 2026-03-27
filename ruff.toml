@@ -1,0 +1,34 @@
+line-length = 120
+target-version = "py312"
+exclude = [
+  ".git",
+  ".venv",
+  "venv",
+  "__pycache__",
+  "build",
+  "dist",
+  "node_modules",
+  "migrations",
+]
+force-exclude = true
+
+[lint]
+select = [
+  "E",
+  "F",
+  "W",
+  "I",
+  "UP",
+  "B",
+]
+ignore = [
+  "E501",
+]
+
+[lint.isort]
+known-first-party = ["config", "aviana"]
+
+[format]
+quote-style = "double"
+indent-style = "space"
+line-ending = "auto"

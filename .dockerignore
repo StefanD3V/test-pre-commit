@@ -1,0 +1,17 @@
+.env
+.git
+.gitignore
+__pycache__
+*.pyc
+*.pyo
+venv/
+.venv/
+.ruff_cache/
+.idea/
+staticfiles/
+db.sqlite3
+*.egg-info/
+dist/
+build/
+README.md
+.github/
