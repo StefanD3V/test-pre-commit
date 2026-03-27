@@ -9,9 +9,9 @@ repos:
   - repo: local
     hooks:
       - id: django-tests
-        name: django manage.py test
-        entry: .venv/bin/python
-        args: [manage.py, test]
+        name: django manage.py test in docker
+        entry: docker
+        args: [compose, exec, -T, web, python, manage.py, test]
         language: system
         pass_filenames: false
         stages: [pre-push]
